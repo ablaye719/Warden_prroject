@@ -34,18 +34,50 @@ header a span {
     margin-top : 4vh
 }
 
+.Nav {
+    background-color: #78C5F0 ;
+    height: 15vh;
+    float: left;
+    width: 33.3%;
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 4vh;
+    border-right: solid;
+
+}
+
+.Nav:hover {
+    opacity: 1;
+}
+
+
+
+
+
 footer {
     height: 7vh;
     background: #93e1a2;
     position: absolute;
     bottom: 0;
     width : 100%;
-    color : green
+    color : green;
+    display: flex;
+    align-items: center;
+}
+
+#CGU {
+    margin-left: 10vw;
+}
+
+#FAQ {
+    margin-left: 70vw;
 }
 
 
-
-body div {
+#login-centre {
     margin-left : 30vw;
     margin-top : 10vh;
 }
