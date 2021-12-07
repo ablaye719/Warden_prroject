@@ -35,11 +35,10 @@ header a span {
 }
 
 .Nav {
-    background-color: #78C5F0 ;
+    background-color: rgba(120, 197, 240, 0.6) ;
     height: 15vh;
     float: left;
     width: 33.3%;
-    opacity: 0.6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,7 +49,7 @@ header a span {
 }
 
 .Nav:hover {
-    opacity: 1;
+    background-color: rgba(120, 197, 240, 1) ;
 }
 
 
