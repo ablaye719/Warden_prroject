@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header {
+    background: #93e1a2;
+    height: 15vh;
+}
+
+header a {
+    float: left; 
+}
+header a span {
+    float: left;
+    margin-top: 7vh;
+}
+
+#logo {
+    width: 10vw;
+    height: 15vh;
+    float: left;
+}
+
+#langue {
+    width: 5vw;
+    height: 7vh;
+    margin-left : 60vw;
+    margin-top : auto;
+}
+
+/*barre de recherche*/
+
+.search{
+    width: 20%;
+    display: flex;
+    margin-left: 500px;
+}
+
+.srch{
+    font-family: 'Times New Roman', Times, serif;
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid orange;
+    margin-top: 13px;
+    color: white;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: orange;
+    border: 2px solid orange;
+    margin-top: 13px;
+    color: white;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+/* connexion*/
+
+.from{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.from h2{
+    width: 220px;
+    font-family: sans-serif;
+
+}
+
+
+/* bouton langue*/
+
+#translator_9797
+{
+    
+    margin-left: 170%;
+    display: flex;
+    
+}
+
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(0, 213, 220);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+
+.Nav {
+    background-color: #78C5F0 ;
+    height: 15vh;
+    float: left;
+    width: 33.3%;
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 4vh;
+    border-right: solid;
+
+}
+
+.Nav:hover {
+    opacity: 1;
+}
+
+
+
+
+
+footer {
+    height: 7vh;
+    background: #93e1a2;
+    position: absolute;
+    bottom: 0;
+    width : 100%;
+    color : green;
+    display: flex;
+    align-items: center;
+}
+
+#CGU {
+    margin-left: 10vw;
+}
+
+#FAQ {
+    margin-left: 70vw;
+}
+
+
+#login-centre {
+    margin-left : 30vw;
+    margin-top : 10vh;
+}
+
+label {
+    font-size: 8vh;
+}
+
+input {
+    margin-top: 4vh;
+    height: 10vh;
+    font-size: 3vh;
+    margin-bottom: 3vh;
+    width : 25vw;
+    background: white;
+    border-top: none;
+    border-bottom-color: black;
+    border-left: none;
+    border-right: none;
+}
+
+
+.button1 {
+    height : 7vh;
+    width : 20vw;
+    margin-top: 3vh;
+    margin-left: 5vw;
+    border-radius: 1.5vw;
+    appearance: none;
+    background-color: #78C5F0;
+    border: none;
+    cursor: pointer;
+    font-family: Clarkson,Helvetica,sans-serif;
+    font-size: 3vh;
+    opacity: 1;
+    outline: 0;
+    position: relative;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: uppercase;
+    transition : opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+.button1:before {
+    animation: opacityFallbackOut .5s step-end forwards;
+    border-radius: 1.5vw;
+    backface-visibility: hidden;
+    background-color: #61ACD6;
+    clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateZ(0);
+    transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+    width: 100%;
+}
+
+.button1:hover:before {
+    animation: opacityFallbackIn 0s step-start forwards;
+    clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button1 span {
+    z-index: 1;
+    position: relative;
+}
