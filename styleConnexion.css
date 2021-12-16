@@ -1,16 +1,11 @@
 body {
     background-image : url(arbre.jpg);
-}
-
-.entete{
-    text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: medium;
-    margin-left: 30%;
-    margin-right: 30%;
-    color: dodgerblue;
+    font-style: normal;
 
 }
+
 
 
 .formulaire{
@@ -28,23 +23,8 @@ body {
     text-align: center;
 }
   
-footer {
-    height: 7vh;
-    background: #93e1a2;
-    bottom: 0;
-    width : 100%;
-    color : green;
-    display: flex;
-    align-items: center;
-    margin-bottom: 0%;
-}
-#CGU {
-    margin-left: 10vw;
-}
 
-#FAQ {
-    margin-left: 70vw;
-}
+
 .button1 {
     height : 7vh;
     width : 20vw;
