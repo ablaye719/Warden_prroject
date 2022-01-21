@@ -110,8 +110,8 @@ var Question = function (questionObj) {
       let correctFeedback, incorrectFeedback;
       this.html = this.html || document.createElement("div");
   
-      correctFeedback = "Nice! You got it right.";
-      incorrectFeedback = "Oh! Not the correct answer.";
+      correctFeedback = "Bravo! C'est la bonne réponse.";
+      incorrectFeedback = "Oups! .";
   
       if (this.selectedAnswer !== null) {
         if (this.selectedAnswer.value.isCorrect) {

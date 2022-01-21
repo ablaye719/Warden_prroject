@@ -4,98 +4,106 @@
   
   let questionsData = [
     {
-      text: "Channel name",
+      text: "A quel vitesse se dégrade une canette de soda dans la nature ?",
       answers: [
         {
-          text: "Pewdipie",
+          text: "Jusqu'à 6 semaines",
           isCorrect: false
         },
         {
-          text: "SmfCoder",
+          text: "Jusqu'à 100 ans",
           isCorrect: true
         },
         {
-          text: "Jack",
+          text: "Jusqu'à 8 mois",
+          isCorrect: false
+        },
+        {
+          text: "Jusqu'à 10 ans",
           isCorrect: false
         }
       ]
     },
     {
-      text: "Channel goal",
+      text: "Quelle est la consommation d'eau pour une chasse d'eau tirée",
       answers: [
         {
-          text: "Help you become a better developer",
+          text: "Environ 12 litres",
           isCorrect: true
         },
         {
-          text: "Help you cook amazing cookies",
+          text: "Environ 2 litres",
           isCorrect: false
         },
         {
-          text: "Becoming an artist",
+          text: "Environ 6 litres",
           isCorrect: false
         },
         {
-          text: "Don't know",
+          text: "Environ 20 litres",
           isCorrect: false
         }
       ]
     },
     {
-      text: "Subscribe and ...",
+      text: "Quel est le secteur le plus émetteur de gaz à effet de serre ?",
       answers: [
         {
-          text: "Watch all my videos",
+          text: "L'agriculture",
           isCorrect: false
         },
         {
-          text: 'Comment "I subscribed"',
+          text: "L'agroalimentaire",
           isCorrect: false
         },
         {
-          text: "Active the notifications",
-          isCorrect: true
-        }
-      ]
-    },
-    {
-      text: "In witch year was the first version of c++ released",
-      answers: [
-        {
-          text: "1982",
+          text: "Les transports",
           isCorrect: true
         },
         {
-          text: "1995",
-          isCorrect: false
-        },
-        {
-          text: "1983",
-          isCorrect: false
-        },
-        {
-          text: "1985",
+          text: "L'industrie minière",
           isCorrect: false
         }
       ]
     },
     {
-      text: "What is France capital",
+      text: "Quelle est la quantité moyenne de papier utilisé par un employé de bureau en un an ? ",
       answers: [
         {
-          text: "Lyon",
+          text: "75 Kilos",
           isCorrect: true
         },
         {
-          text: "Marseille",
+          text: "10 Kilos",
           isCorrect: false
         },
         {
-          text: "Paris",
+          text: "23 Kilos",
+          isCorrect: false
+        },
+        {
+          text: "47 Kilos",
+          isCorrect: false
+        }
+      ]
+    },
+    {
+      text: "Depuis 2010, quel pays est le premier producteur d'énergie éolienne ?",
+      answers: [
+        {
+          text: "Chine",
           isCorrect: true
         },
         {
-          text: "Lille",
+          text: "Allemagne",
+          isCorrect: false
+        },
+        {
+          text: "France",
+          isCorrect: false
+        },
+        {
+          text: "Russie",
           isCorrect: false
         }
       ]
@@ -145,7 +153,8 @@
   
     if (answeredQuestions == questions.length) {
       setTimeout(function () {
-        alert(`Quiz completed! \nFinal score: ${score}/${questions.length}`);
+        alert(`Merci d'avoir participé à notre quizz! \nVotre score final es de: ${score}/${questions.length}`);
+
       }, 100);
     }
   });
