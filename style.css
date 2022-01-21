@@ -5,7 +5,10 @@
 }
 
 body {
-    background-image : url(arbre.jpg);
+    background-image : url("arbre.png");
+    background-repeat: no-repeat;
+    background-size : 100% 100%;
+    
 }
 
 header {
@@ -88,14 +91,23 @@ header a span {
 
 
 footer {
-    height: 7vh;
-    background: #93e1a2;
-    position: absolute;
+    
+    /*background: #93e1a2;
     bottom: 0;
     width : 100%;
     color : green;
     display: flex;
     align-items: center;
+    line-height: 10vh;*/
+    
+    height: 7vh;
+    background: #93e1a2;
+    bottom: 0;
+    width : 100%;
+    color : green;
+    display: flex;
+    align-items: center;
+    overflow:auto;
 }
 
 #CGU {

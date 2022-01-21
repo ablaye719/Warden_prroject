@@ -1,3 +1,42 @@
+<!--<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+    </head>
+    <header>
+        <a href="home.html">
+            <span class="text">Warden by </span>
+            <img id="logo" src="logo.png"/>
+        </a>
+        <a>
+            <!--<img id="langue" src="drapeau-francais.png">
+            <div id="langue">
+                <!--<input 
+
+                class="favorite styled"
+                type="button"
+                value="Se Connecter">
+
+                
+
+            </div>
+        </a>  
+
+        <div>
+            <a class='Nav'><span>Dashboard</span></a>
+            <a class='Nav'><span>Statistiques</span></a>
+            <a class='Nav'><span>Pronostiques</span></a>
+        </div>
+        
+        
+
+    </header>
+    <body>
+        
+        
+    </body>
+</html> -->
+
 <html>
     <head>
         <meta charset="utf-8">

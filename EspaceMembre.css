@@ -1,0 +1,212 @@
+/*body,
+html,
+header{
+    font-family: "poppins";
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}*/
+
+body{
+    background-image : url("arbre.png");
+    background-repeat: no-repeat;
+    background-size : 100% 100%;
+        
+}
+
+
+.sec1{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sec1 h1{
+    position: relative;
+    font-size: 5em;
+    z-index: 3;
+    color: sienna;
+}
+
+.content a{
+    position: relative;
+    z-index: 4;
+    text-align: center;
+    display: flex;
+    color: blanchedalmond;
+    margin-left: 40%;
+    font-size: 2em;
+    padding: auto;
+}
+
+#Information{
+    margin-top: 10%;
+    border-radius: 10px;
+    border: 3px darkred groove;
+	box-shadow: 6px 6px 6px black;
+	width: 50%;
+	margin: auto;
+    color: black;
+    padding: auto;  
+    text-decoration:none;
+    text-align: center;
+}
+
+#Modifier{
+    border-radius: 10px;
+    border: 3px darkred groove;
+	box-shadow: 6px 6px 6px black;
+	width: 50%;
+	margin: auto;
+    margin-top: 10%;
+    color: black;
+    text-decoration:none;
+    
+}
+
+.sec1::before{
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: cyan;
+    opacity: 0.1;
+    z-index: 2;
+    border-radius: 0% 0% 50% 50%;
+    transform: scalex(1.5);
+
+}
+
+.sec1::after{
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color:cyan ;
+    opacity: 0.2;
+    z-index: 1;
+    border-radius: 0% 0% 50% 50%;
+    transform: scalex(1.7);
+
+}
+
+.sec2{
+    height: 100vh;
+}
+.sec2 div{
+    margin-left: 33%;
+}
+
+footer {
+    
+    background: #93e1a2;
+    bottom: 0;
+    width : 100%;
+    color : green;
+    display: flex;
+    align-items: center;
+    line-height: 10vh;
+}
+
+#CGU {
+    margin-left: 10vw;
+    text-decoration:none;
+}
+
+#FAQ {
+    margin-left: 70vw;
+    text-decoration:none;
+}
+
+/*bouton déconnection*/
+
+#login-centre {
+    margin-left : 30vw;
+    margin-top : 10vh;
+}
+
+label {
+    font-size: 8vh;
+}
+
+input {
+    margin-top: 4vh;
+    height: 10vh;
+    font-size: 3vh;
+    margin-bottom: 3vh;
+    width : 25vw;
+    background: white;
+    border-top: none;
+    border-bottom-color: black;
+    border-left: none;
+    border-right: none;
+}
+
+
+.button1 {
+    height : 7vh;
+    width : 20vw;
+    margin-top: 3vh;
+    margin-left: 5vw;
+    border-radius: 1.5vw;
+    appearance: none;
+    background-color: #78C5F0;
+    border: none;
+    cursor: pointer;
+    font-family: Clarkson,Helvetica,sans-serif;
+    font-size: 3vh;
+    opacity: 1;
+    outline: 0;
+    position: relative;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: uppercase;
+    transition : opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+.button1:before {
+    animation: opacityFallbackOut .5s step-end forwards;
+    border-radius: 1.5vw;
+    backface-visibility: hidden;
+    background-color: #61ACD6;
+    clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateZ(0);
+    transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+    width: 100%;
+}
+
+.button1:hover:before {
+    animation: opacityFallbackIn 0s step-start forwards;
+    clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button1 span {
+    z-index: 1;
+    position: relative;
+}
+
+/* Quizz*/
+
+.quizz p{
+    color: white;
+    margin-right: 55%;
+    text-align: center;
+    font-size: x-large;
+
+}
+
+#quizz{
+    text-decoration:none;
+    color: black;
+}

@@ -162,12 +162,12 @@ header a span {
 footer {
     height: 7vh;
     background: #93e1a2;
-    position: absolute;
     bottom: 0;
     width : 100%;
     color : green;
     display: flex;
     align-items: center;
+    overflow:auto;
 }
 
 #CGU {
