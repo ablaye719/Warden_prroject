@@ -21,32 +21,71 @@
 ?>
 <!DOCTYPE html>
 <html>
-    <head>Les Utilisateurs</head>
+    <head>
+    <link rel="stylesheet" href="Gestionnaire.css">
+
+    </head>
     <body>
         <h1>Mes informations Personnelles</h1>
-        <table>
+
+        
+        <table class="tableau-style">
             <thead>
                 <tr>
-                <th>ID</th>
-                <th>Nom de l'utilisateur</th>
-                <th>Prénom de l'utilisateur</th>
-                <th>Adresse de l'utilisateur</th>
-                <th>Fonction de l'utilisateur</th>
-                <th>Email de l'utilisateur</th>
+                    <th>ID</th>
                 </tr>
+
+                <tr>
+                    <th>Nom de l'utilisateur</th> 
+                </tr>
+
+                <tr>
+                    <th>Prénom de l'utilisateur</th> 
+                </tr>
+
+                <tr>
+                    <th>Adresse de l'utilisateur</th> 
+                </tr>
+
+                <tr>
+                    <th>Fonction de l'utilisateur</th> 
+                </tr>
+
+                <tr>
+                    <th>Email de l'utilisateur</th> 
+                </tr>
+
+                
             </thead>
-        <tbody>
-            <?php foreach ($users as $user) {$_SESSION['idUtilisateur'] = $user['idUtilisateur'];?>
-            <tr>
-                <td><?php echo htmlspecialchars($user['idUtilisateur']); ?></td>
-                <td><?php echo htmlspecialchars($user['nomUtilisateur']); ?></td>
-                <td><?php echo htmlspecialchars($user['prenomUtilisateur']); ?></td>
-                <td><?php echo htmlspecialchars($user['adresseUtilisateur']); ?></td>
-                <td><?php echo htmlspecialchars($user['fonctionUtilisateur']); ?></td>
-                <td><?php echo htmlspecialchars($user['emailUtilisateur']); ?></td>
-            </tr>
-            <?php } ?>
-        </tbody>
-    </table>
+
+            <tbody>
+                <?php foreach ($users as $user) {$_SESSION['idUtilisateur'] = $user['idUtilisateur'];?>
+                <tr>
+                    <td><?php echo htmlspecialchars($user['idUtilisateur']); ?></td>
+                </tr>
+
+                <tr>
+                    <td><?php echo htmlspecialchars($user['nomUtilisateur']); ?></td>
+                </tr>
+
+                <tr>
+                    <td><?php echo htmlspecialchars($user['prenomUtilisateur']); ?></td>
+                </tr>
+
+                <tr>
+                    <td><?php echo htmlspecialchars($user['adresseUtilisateur']); ?></td>
+                </tr>
+
+                <tr>
+                    <td><?php echo htmlspecialchars($user['fonctionUtilisateur']); ?></td>
+                </tr>
+
+                <tr>
+                    <td><?php echo htmlspecialchars($user['emailUtilisateur']); ?></td>
+                </tr>
+
+                <?php } ?>
+            </tbody>
+        </table>
     </body>
 </html>

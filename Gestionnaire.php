@@ -20,10 +20,13 @@
 ?>
 <!DOCTYPE html>
 <html>
-    <head>Les Utilisateurs</head>
+    <head>
+        <link rel="stylesheet" href="Gestionnaire.css">
+
+    </head>
     <body>
         <h1>Liste des utilisateurs</h1>
-        <table>
+        <table class="tableau-style">
             <thead>
                 <tr>
                 <th>ID</th>
@@ -35,19 +38,19 @@
                 <th>Actions</th>
                 </tr>
             </thead>
-        <tbody>
-            <?php foreach ($users as $user) {$_SESSION['idUtilisateur'] = $user['idUtilisateur'];?>
-            <tr>
-                <td><?php echo htmlspecialchars($user['idUtilisateur']); ?></td>
-                <td><?php echo htmlspecialchars($user['nomUtilisateur']); ?></td>
-                <td><?php echo htmlspecialchars($user['prenomUtilisateur']); ?></td>
-                <td><?php echo htmlspecialchars($user['adresseUtilisateur']); ?></td>
-                <td><?php echo htmlspecialchars($user['fonctionUtilisateur']); ?></td>
-                <td><?php echo htmlspecialchars($user['emailUtilisateur']); ?></td>
-                <td><a href="supprimerUtilisateur.php">Supprimer l'utilisateur</td>
-            </tr>
-            <?php } ?>
-        </tbody>
-    </table>
+            <tbody>
+                <?php foreach ($users as $user) {$_SESSION['idUtilisateur'] = $user['idUtilisateur'];?>
+                <tr>
+                    <td><?php echo htmlspecialchars($user['idUtilisateur']); ?></td>
+                    <td><?php echo htmlspecialchars($user['nomUtilisateur']); ?></td>
+                    <td><?php echo htmlspecialchars($user['prenomUtilisateur']); ?></td>
+                    <td><?php echo htmlspecialchars($user['adresseUtilisateur']); ?></td>
+                    <td><?php echo htmlspecialchars($user['fonctionUtilisateur']); ?></td>
+                    <td><?php echo htmlspecialchars($user['emailUtilisateur']); ?></td>
+                    <td><a href="supprimerUtilisateur.php">Supprimer l'utilisateur</td>
+                </tr>
+                <?php } ?>
+            </tbody>
+        </table>
     </body>
 </html>
