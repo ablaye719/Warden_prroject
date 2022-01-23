@@ -1,9 +1,8 @@
-body {
-    background-image : url(arbre.jpg);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: medium;
-    font-style: normal;
-
+body{
+    background-image : url("arbre.png");
+    background-repeat: no-repeat;
+    background-size : 100% 100%;
+        
 }
 
 
@@ -14,6 +13,7 @@ body {
     margin-right: 30%;
     margin-top: 10%;
     margin-bottom: 30%;
+    
 }
 .icon {
     padding: 10px;

@@ -26,6 +26,13 @@
           <input type="text" class="form-control" name="fonction">
         </div>
         <div class="mb-3">
+          <label for="Type Utilisateur" class="form-label">Type d'utilisateur</label>
+          <select name="typeUtilisateur" class="form-control">
+            <option value="simpleUtilisateur">Utilisateur Simple</option>
+            <option value="gestionnaire">Gestionnaire</option>
+          </select>
+        </div>
+        <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Login</label>
           <input type="email" class="form-control" name="email" aria-describedby="emailHelp">
         </div>

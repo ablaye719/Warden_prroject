@@ -4,13 +4,13 @@
         // On enregistre les informations dans la base de données 
         try{
             $mysqlConnection = new PDO(
-                'mysql:host=localhost;dbname=Warden_BDD;charset=utf8',
+                'mysql:host=127.0.0.1;dbname=warden_bdd;charset=utf8',
                 'root',
                 ''
             );
             $mysqlConnection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $password = password_hash($_POST['mdp'], PASSWORD_BCRYPT);
-            $req = "INSERT INTO utilisateur ( idUtilisateur ,nomUtilisateur, prenomUtilisateur, adresseUtilisateur, fonctionUtilisateur, emailUtilisateur, passwordUtilisateur) VALUES (NULL,'".$_POST["nom"]."','".$_POST["prenom"]."','".$_POST["adresse"]."','".$_POST["fonction"]."','".$_POST["email"]."','".$_POST['mdp']."');";
+            $req = "INSERT INTO utilisateur ( idUtilisateur ,nomUtilisateur, prenomUtilisateur, adresseUtilisateur, fonctionUtilisateur, typeUtilisateur,emailUtilisateur, password) VALUES (NULL,'".$_POST["nom"]."','".$_POST["prenom"]."','".$_POST["adresse"]."','".$_POST["fonction"]."','".$_POST["typeUtilisateur"]."','".$_POST["email"]."','".$_POST['mdp']."');";
             $userStmt=$mysqlConnection->prepare($req);
             $userStmt->execute();
             echo $_SESSION['flash']['success'] = 'Un email de confirmation vous a été envoyé pour valider votre compte';

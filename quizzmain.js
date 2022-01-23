@@ -110,7 +110,7 @@
     }
   ];
   
-  // variables initialization
+  // Initialisation des variables
   let questions = [];
   let score = 0,
     answeredQuestions = 0;
@@ -119,7 +119,7 @@
   scoreContainer.innerHTML = `Score: ${score}/${questionsData.length}`;
   
   /**
-   * Shuffles array in place. ES6 version
+   * Shuffles array in place.
    * @param {Array} arr items An array containing the items.
    */
   function shuffle(arr) {
@@ -131,7 +131,7 @@
   
   shuffle(questionsData);
   
-  // creating questions
+  // création des questions
   for (var i = 0; i < questionsData.length; i++) {
     let question = new Question({
       text: questionsData[i].text,

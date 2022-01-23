@@ -11,20 +11,23 @@
                 ''
             );
             $mysqlConnection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $req = "SELECT * FROM  utilisateur WHERE  emailUtilisateur LIKE '$login' AND  passwordUtilisateur LIKE '$password';";
+            $req = "SELECT * FROM  utilisateur WHERE  emailUtilisateur LIKE '$login' AND  password LIKE '$password';";
             $userStmt=$mysqlConnection->prepare($req);
             $userStmt->execute();
             $user = $userStmt->fetchAll();
             if($user != null){
-                $_SESSION['flash']['success'] = 'Connexion réussie';
-                echo $_SESSION['flash']['success_connexion'];
-                header('Location: home.html');
-                exit();
+                for ($i=0; $i<10; $i++) {
+                    echo $user[$i].' '; // Avec insertion d'un espace entre 2 valeurs
+                }
+                //if($user['typeUtilisateur']=="gestionnaire"){
+                    //header('Location: Gestionnaire.php');
+                    //exit();
+
+                //}
+                //header('Location: home.php');
+                //exit();
             }
             else{
-                $_SESSION['erreur'] = 'Identifiant ou mot de passe incorrect';
-                $_SESSION['flash']['danger'] = 'Identifiant ou mot de passe incorrect !';
-                echo $_SESSION['flash']['danger'];
                 header('Location: FormulaireConnexion.php');
             }
 
