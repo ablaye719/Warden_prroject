@@ -1,5 +1,6 @@
 <?php
     session_start();
+    $id = $_SESSION['idUtilisateurConnected'];
     try{
         $mysqlConnection = new PDO(
             'mysql:host=localhost;dbname=Warden_BDD;charset=utf8',
@@ -7,7 +8,7 @@
             ''
         );
         $mysqlConnection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $req = "SELECT * FROM  utilisateur ;";
+        $req = "SELECT * FROM  utilisateur  WHERE idUtilisateur = $id;";
         $userStmt=$mysqlConnection->prepare($req);
         $userStmt->execute();
         $users = $userStmt->fetchAll();
@@ -22,7 +23,7 @@
 <html>
     <head>Les Utilisateurs</head>
     <body>
-        <h1>Liste des utilisateurs</h1>
+        <h1>Mes informations Personnelles</h1>
         <table>
             <thead>
                 <tr>
@@ -32,7 +33,6 @@
                 <th>Adresse de l'utilisateur</th>
                 <th>Fonction de l'utilisateur</th>
                 <th>Email de l'utilisateur</th>
-                <th>Actions</th>
                 </tr>
             </thead>
         <tbody>
@@ -44,7 +44,6 @@
                 <td><?php echo htmlspecialchars($user['adresseUtilisateur']); ?></td>
                 <td><?php echo htmlspecialchars($user['fonctionUtilisateur']); ?></td>
                 <td><?php echo htmlspecialchars($user['emailUtilisateur']); ?></td>
-                <td><a href="supprimerUtilisateur.php">Supprimer l'utilisateur</td>
             </tr>
             <?php } ?>
         </tbody>

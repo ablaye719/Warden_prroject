@@ -51,7 +51,7 @@
     <section class="sec1">
         <div class="content">
             <h1>Information sur le compte</h1>
-            <a id="Information" href="#">Information</a>
+            <a id="Information" href="Information.php">Information</a>
             <a id="Modifier" href="#"><span>Modifier</span></a>
 
         </div>

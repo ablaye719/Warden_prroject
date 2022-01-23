@@ -14,22 +14,26 @@
             $req = "SELECT * FROM  utilisateur WHERE  emailUtilisateur LIKE '$login' AND  password LIKE '$password';";
             $userStmt=$mysqlConnection->prepare($req);
             $userStmt->execute();
-            $user = $userStmt->fetchAll();
-            if($user != null){
-                for ($i=0; $i<10; $i++) {
-                    echo $user[$i].' '; // Avec insertion d'un espace entre 2 valeurs
+            $users = $userStmt->fetchAll();
+            if($users != null){
+                foreach($users as $user){
+                    $_SESSION['idUtilisateurConnected']=$user['idUtilisateur'];
+                    if($user['typeUtilisateur']=="gestionnaire"){
+                        header('Location: Gestionnaire.php');
+                        exit();
+    
+                    }
+                    else{
+                        header('Location: home.php');
+                        exit();
+    
+                    }
                 }
-                //if($user['typeUtilisateur']=="gestionnaire"){
-                    //header('Location: Gestionnaire.php');
-                    //exit();
-
-                //}
-                //header('Location: home.php');
-                //exit();
             }
             else{
                 header('Location: FormulaireConnexion.php');
             }
+
 
 
         }
