@@ -4,12 +4,12 @@
     box-sizing: border-box;
 }
 
-body {
+/*body {
     background-image : url("arbre.png");
     background-repeat: no-repeat;
     background-size : 100% 100%;
     
-}
+}*/
 
 header {
     background: #93e1a2;
@@ -91,15 +91,6 @@ header a span {
 
 
 footer {
-    
-    /*background: #93e1a2;
-    bottom: 0;
-    width : 100%;
-    color : green;
-    display: flex;
-    align-items: center;
-    line-height: 10vh;*/
-    
     height: 7vh;
     background: #93e1a2;
     bottom: 0;
@@ -107,7 +98,7 @@ footer {
     color : green;
     display: flex;
     align-items: center;
-    overflow:auto;
+    
 }
 
 #CGU {
@@ -117,7 +108,6 @@ footer {
 #FAQ {
     margin-left: 70vw;
 }
-
 
 #login-centre {
     margin-left : 30vw;
@@ -191,3 +181,7 @@ input {
     z-index: 1;
     position: relative;
 }
+
+/*.image-warden img{
+    padding-left: 180%;
+}*/

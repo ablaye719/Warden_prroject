@@ -7,12 +7,12 @@ header{
     overflow-x: hidden;
 }*/
 
-body{
+/*body{
     background-image : url("arbre.png");
     background-repeat: no-repeat;
     background-size : 100% 100%;
         
-}
+}*/
 
 
 .sec1{
@@ -199,7 +199,7 @@ input {
 /* Quizz*/
 
 .quizz p{
-    color: white;
+    color: black;
     margin-right: 55%;
     text-align: center;
     font-size: x-large;
@@ -207,6 +207,11 @@ input {
 }
 
 #quizz{
+    text-decoration:none;
+    color: black;
+}
+
+#deconnexion{
     text-decoration:none;
     color: black;
 }

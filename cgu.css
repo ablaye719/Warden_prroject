@@ -4,9 +4,7 @@
     box-sizing: border-box;
 }
 
-body {
-    
-}
+
 
 header {
     background: #93e1a2;
@@ -165,8 +163,10 @@ article
 
 article h1{
     font-size: 1.5em;
-	font-weight: normal;
+	font-weight: bold;
 	margin: 0 0 0 10px;
+    color: red;
+    
 
 }
 

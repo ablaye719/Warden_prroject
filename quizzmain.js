@@ -25,7 +25,7 @@
       ]
     },
     {
-      text: "Quelle est la consommation d'eau pour une chasse d'eau tirée",
+      text: "Quelle est la consommation d'eau pour une chasse d'eau tirée ?",
       answers: [
         {
           text: "Environ 12 litres",
@@ -153,7 +153,7 @@
   
     if (answeredQuestions == questions.length) {
       setTimeout(function () {
-        alert(`Merci d'avoir participé à notre quizz! \nVotre score final es de: ${score}/${questions.length}`);
+        alert(`Merci d'avoir participé à notre quizz! \nVotre score final est de: ${score}/${questions.length}`);
 
       }, 100);
     }

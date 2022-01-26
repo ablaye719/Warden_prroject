@@ -1,3 +1,8 @@
+<?php
+    session_start()
+
+?>
+
 <!DOCTYPE html>
     <head>
         <meta charset="utf-8">
@@ -8,7 +13,7 @@
     <p class="text-center"style="font-size: 60px;">
       Bienvenue sur le site WARDEN
     </p>
-      <form class="formulaire" method="post" action="Inscription.php">
+      <form class="formulaire" method="post" action="Modifier.php">
       <div class="mb-3">
           <label for="nom" class="form-label"style="font-size: 30px;">Nom</label>
           <input type="text" class="form-control" name="nom">
