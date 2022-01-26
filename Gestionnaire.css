@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *, ::before, ::after{
     box-sizing: border-box;
     margin: 0;
@@ -74,4 +75,82 @@ h1{
         font-weight: bold;
         text-align: left;
     }
+=======
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tableau-style{
+    border-collapse: collapse;
+    min-width: 400px;
+    width: auto;
+    box-shadow: 0 5px 50px rgba(0,0,0,0.15);
+    cursor: pointer;
+    margin: 100px auto;
+    border: 2px solid midnightblue;
+}
+
+thead tr{
+    background-color: midnightblue;
+    color: #fff;
+    text-align: left;
+}
+
+th, td{
+    padding: 10px 20px;
+
+}
+
+tbody tr, td, th{
+    border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even){
+    background-color: #f3f3f3;
+}
+
+h1{
+    text-align: center;
+    color: red;
+    
+}
+
+/*Responsive*/
+
+@media(max-width: 500px){
+    .tableau-style thead{
+        display: none;
+    }
+
+    .tableau-style, .tableau-style tbody, .tableau-style tr, .tableau-style td{
+        display: block;
+        width: 100%;
+    }
+    .tableau-style tr{
+        margin-bottom: 15px;
+    }
+    .tableau-style td{
+        text-align: right;
+        padding-left: 50%;
+        text-align: right;
+        position: relative;
+    }
+    .tableau-style td::before{
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+>>>>>>> 470393e51f72e5caa1d7f2756797e3ce3b30ab0b
 }
