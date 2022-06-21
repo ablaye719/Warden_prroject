@@ -12,12 +12,10 @@
         $userStmt=$mysqlConnection->prepare($req);
         $userStmt->execute();
         $users = $userStmt->fetchAll();
-
-
-    }
+    }        
     catch(PDOException $e){
-    echo "Erreur : " . $e->getMessage();
-    } 
+        echo "Erreur : " . $e->getMessage();
+    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -54,5 +52,4 @@
             </tbody>
         </table>
     </body>
->>>>>>> 470393e51f72e5caa1d7f2756797e3ce3b30ab0b
 </html>
