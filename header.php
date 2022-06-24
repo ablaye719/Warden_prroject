@@ -1,46 +1,7 @@
-<!--<html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
-    </head>
-    <header>
-        <a href="home.html">
-            <span class="text">Warden by </span>
-            <img id="logo" src="logo.png"/>
-        </a>
-        <a>
-            <!--<img id="langue" src="drapeau-francais.png">
-            <div id="langue">
-                <!--<input 
-
-                class="favorite styled"
-                type="button"
-                value="Se Connecter">
-
-                
-
-            </div>
-        </a>  
-
-        <div>
-            <a class='Nav'><span>Dashboard</span></a>
-            <a class='Nav'><span>Statistiques</span></a>
-            <a class='Nav'><span>Pronostiques</span></a>
-        </div>
-        
-        
-
-    </header>
-    <body>
-        
-        
-    </body>
-</html> -->
 
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     </head>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #B3E5FC;">

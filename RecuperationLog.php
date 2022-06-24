@@ -33,7 +33,7 @@ sscanf($trame[$j],"%1s%4s%1s%1s%2s%4s%4s%2s%4s%2s%2s%2s%2s%2s");
 
 
 //echo("<br />$t,$o,$r,$c,$n,$v,$a,$x,$year,$month,$day,$hour,$min,$sec<br />");
-$val[$j] = round(20*log($v*3.3/4095,10)-13,2);
+$val[$j] = $v;
 $j=$j+1;
 }
 

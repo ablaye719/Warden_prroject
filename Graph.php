@@ -1,27 +1,39 @@
 <div>
     <canvas id="monGraph" width="100" height="50" style="background-color: rgba(215, 239, 219, 0.8);"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
     <script>
         let ctx = document.querySelector("#monGraph")
 
         let graph = new Chart(ctx, {
-
             type: "line",
 
             data: {
 
-                labels: ['0', '1', '2', '3', '4', '5','6', '7', '8', '9','10'],
+                labels: ['9','10','11','12','13','14'],
 
 
-                datasets: [{
+                datasets: [
+                {
+                    label: 'Graphe de la Température',
+                    data: [20,21.7,22,22.5,24,25],
+                    borderColor: 'red',
 
-                    label: 'Température',
+                },
+                {
+                    label: 'Graphe de la Température j-1',
+                    data: [21,22,22.6,23,21,25],
+                    borderColor: 'blue',
 
-                    data: ['', <?php echo abs($val[19])?>, <?php echo abs($val[18])?>, <?php echo abs($val[17])?>, <?php echo abs($val[16])?>, <?php echo abs($val[15])?>, <?php echo abs($val[14])?>, <?php echo abs($val[13])?>, <?php echo abs($val[12])?>,<?php echo abs($val[11])?>,<?php echo abs($val[10])?>],
-                    borderColor: 'blue'
+                }
 
-                }]
+            ],
+
+
+
+
 
             },
+
 
             options: {
 
